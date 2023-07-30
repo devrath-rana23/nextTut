@@ -36,3 +36,5 @@
 # pageProps prop - 
 
 # styled-jsx not recommended approach used for writing component specific css
+
+# global css file or normal import of css can only be done in app.tsx file not other files. in other pages it will treat normal css import as global css and will be not allowed
