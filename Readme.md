@@ -38,3 +38,9 @@
 # styled-jsx not recommended approach used for writing component specific css
 
 # global css file or normal import of css can only be done in app.tsx file not other files. in other pages it will treat normal css import as global css and will be not allowed
+
+# to import a css file to a particular component we need to make file name as filename.modeule.css and give it some alias and use that alias to apply classes defined in it
+
+# next supports sass by default. importing it to a file follows the same logic as for css files as mentioned above
+
+# speciality of api folder is that it cannot return a jsx code. it should return a single function. filename automatically makes a endpoint -> http://localhost:3000/api/filename
