@@ -77,3 +77,10 @@
 # use Link to navigate smoothly like react instead of whole page refreshing
 
 # use of dynamic routing
+
+# useRouter sometimes does not behave as expected. on first render the qury object returns empty to handle that we need to use getstaticprops and getserversideprops
+
+# router.push() push in history stack, and router.replace() replace in history stack so you may not find the same page as expected whin goin history back in case of replace
+
+# try to use link component as it is good for seo and accessibility
+
