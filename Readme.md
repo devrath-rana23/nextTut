@@ -73,3 +73,7 @@
 ##### JSON WEB TOKEN AUTH
 
 # npm i jsonwebtoken @types/jsonwebtoken --save-dev
+
+# use Link to navigate smoothly like react instead of whole page refreshing
+
+# use of dynamic routing
