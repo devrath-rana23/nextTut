@@ -84,3 +84,6 @@
 
 # try to use link component as it is good for seo and accessibility
 
+# [...name].tsx catch all routes except index
+
+# [[...name]].tsx catch all routes includes index -> for which route.query.name will return empty object
