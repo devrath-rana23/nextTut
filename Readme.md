@@ -90,7 +90,7 @@
 
 # cannot make custom status code pages other than 404 as it is statically configured in next
 
-# getStaticProps function return a object with props key with value as object of props which will be passed to the main jsx component. This function is executed before 
+# getStaticProps function return a object with props key with value as object of props which will be passed to the main jsx component. This function is executed before
 
 # getStaticProps run only once in prod and in dev it run again and again only for facilitating development. If we use revalidate then it will try to rerun the getStaticProps on server within that number of seconds specified.
 
@@ -106,5 +106,4 @@
 
 # when next is loading a particular page it will -> run getStaticProps on server side -> render page -> in background next would add this to the path list and wouls store it locally on the filesystem for faster access
 
-
-
+# getServerSideProps is called always and next js will not create a static file for this component in it own file system to serve things quickly so not recommended. SSR -> server side rendering
