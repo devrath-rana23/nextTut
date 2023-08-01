@@ -92,6 +92,9 @@
 
 # getStaticProps function return a object with props key with value as object of props which will be passed to the main jsx component. This function is executed before 
 
+# getStaticProps run only once in prod and in dev it run again and again only for facilitating development. If we use revalidate then it will try to rerun the getStaticProps on server within that number of seconds specified.
 
+# when we inspect source we can also see the props passed as next does not reconstruct the whole page but take updated props and template to render page to save cost.
 
+# 
 

@@ -2,6 +2,7 @@ import { GetStaticProps } from "next";
 import path from "path";
 import React from "react";
 
+// Run on SERVER SIDE
 export const getStaticProps: GetStaticProps = async (context) => {
   const fs = require("fs");
   const txt = fs.readFileSync(
@@ -10,6 +11,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   );
 
   return {
+    revalidate: 10,//number of seconds
     props: {
       myFavNum: txt,
     },
