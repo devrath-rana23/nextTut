@@ -87,3 +87,11 @@
 # [...name].tsx catch all routes except index
 
 # [[...name]].tsx catch all routes includes index -> for which route.query.name will return empty object
+
+# cannot make custom status code pages other than 404 as it is statically configured in next
+
+# getStaticProps function return a object with props key with value as object of props which will be passed to the main jsx component. This function is executed before 
+
+
+
+
