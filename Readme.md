@@ -96,5 +96,15 @@
 
 # when we inspect source we can also see the props passed as next does not reconstruct the whole page but take updated props and template to render page to save cost.
 
-# 
+# we have to always use getStaticPaths with getStaticProps in dynamic pages like [name].tsx [[name]].tsx or [...name].tsx for normal pages we can use getStaticProps standalone
+
+# getStaticPaths specify when getStaticProps should run
+
+# getStaticProps run on build time and it does not run on run time. so in production build when application is built the staticProps of whole project be executed alog with computation of html and json files and stored in file structure hence it works fine for static pages without square brackets.So for dynamic files we can specify for which particular file this staticProps should run on using getStaticPaths
+
+# getStaticPaths return an object with paths which contains paths for which we want to run getStaticProps function defined in that file. and for other paths it will start giving 404 even if we are in dynamic file. But if fallback is true then it will again be open for paths other than meintioned in paths array. also our jsx will be not waiting for props from gettstaticprops and show loading then when props come show them in case of fallback:true.
+
+# when next is loading a particular page it will -> run getStaticProps on server side -> render page -> in background next would add this to the path list and wouls store it locally on the filesystem for faster access
+
+
 
